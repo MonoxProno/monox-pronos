@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monox Pronos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #0f0f0f;
+      --card-bg: #1a1a1a;
+      --highlight: #00ff88;
+      --text-main: #ffffff;
+      --text-muted: #aaaaaa;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-main);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+      background-color: var(--card-bg);
+      box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: var(--text-main);
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    .btn {
+      background: var(--highlight);
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--highlight);
+    }
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(145deg, #0f0f0f, #1f1f1f);
+      box-shadow: inset 0 0 60px rgba(0, 255, 136, 0.05);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: var(--text-muted);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+
+    p {
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
+    footer {
+      background: var(--card-bg);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .highlight {
+      color: var(--highlight);
+      font-weight: bold;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong style="color: var(--highlight);">Monox Pronos</strong></div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#vip">Offre VIP</a>
+      <a href="#results">Résultats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://t.me/monoxpronos" target="_blank" rel="noopener noreferrer">
+      <button class="btn">Rejoindre Telegram</button>
+    </a>
+  </header>
+
+  <section class="hero">
+    <h1>Rejoins la team qui fait sauter la banque 💸⚽</h1>
+    <p>Analyse, stratégie, résultats. Chaque pari compte.</p>
+    <a href="https://t.me/monoxpronos" target="_blank" rel="noopener noreferrer">
+      <button class="btn">Recevoir mes pronos maintenant</button>
+    </a>
+  </section>
+
+  <section id="about">
+    <h2>Qui suis-je ?</h2>
+    <div class="card">
+      <p>Je suis <span class="highlight">Monox</span>. Ici, pas de bullshit. Que du concret. Mes pronostics sont étudiés, testés, et validés. Tu veux percer ? Reste branché.</p>
+    </div>
+  </section>
+
+  <section id="vip">
+    <h2>Accès VIP</h2>
+    <div class="card">
+      <p>✔️ Pronostics chaque jour<br>✔️ Value bets exclusifs<br>✔️ Paris combinés validés<br>✔️ Communauté privée</p>
+      <a href="https://t.me/monoxpronos" target="_blank" rel="noopener noreferrer">
+        <button class="btn" style="margin-top: 1rem;">Accéder au VIP</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="results">
+    <h2>Les Résultats Parlent</h2>
+    <div class="card">
+      <p>🔥 +72% de réussite sur les 30 derniers jours<br>📸 Screens & témoignages clients bientôt ici</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Une question ?</h2>
+    <div class="card">
+      <p>Écris-moi sur <a href="https://t.me/monoxpronos" class="highlight" target="_blank">Telegram</a> ou <span class="highlight">TikTok</span>. Je suis là pour répondre.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Monox Pronos — Tous droits réservés.<br>
+    Insta • TikTok • Telegram
+  </footer>
+</body>
+</html>
